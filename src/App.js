@@ -59,7 +59,7 @@ class App extends React.Component {
       .get(
         `http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=53.89&lon=27.56&dt=${Math.trunc(
           this.state.date.getTime() / 1000
-        )}&appid=0a2abf5e5611e36b11557490198bbf75`
+        )}&appid={api key}`
       )
       .then((res) => {
         console.log(res);
